@@ -1,0 +1,17 @@
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\bin\Debug\net8.0\DataAccesLayer.deps.json
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\bin\Debug\net8.0\DataAccesLayer.runtimeconfig.json
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\bin\Debug\net8.0\DataAccesLayer.dll
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\bin\Debug\net8.0\DataAccesLayer.pdb
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\bin\Debug\net8.0\Sklep.dll
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\bin\Debug\net8.0\Sklep.pdb
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\DataAccesLayer.csproj.AssemblyReference.cache
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\DataAccesLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\DataAccesLayer.AssemblyInfoInputs.cache
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\DataAccesLayer.AssemblyInfo.cs
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\DataAccesLayer.csproj.CoreCompileInputs.cache
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\DataAccesLayer.csproj.CopyComplete
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\DataAccesLayer.dll
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\refint\DataAccesLayer.dll
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\DataAccesLayer.pdb
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\DataAccesLayer.genruntimeconfig.cache
+C:\Users\wojte\source\repos\Taiib2\DataAccesLayer\obj\Debug\net8.0\ref\DataAccesLayer.dll

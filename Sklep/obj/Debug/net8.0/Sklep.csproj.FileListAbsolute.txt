@@ -1,0 +1,12 @@
+C:\Users\wojte\source\repos\Taiib2\Sklep\bin\Debug\net8.0\Sklep.deps.json
+C:\Users\wojte\source\repos\Taiib2\Sklep\bin\Debug\net8.0\Sklep.dll
+C:\Users\wojte\source\repos\Taiib2\Sklep\bin\Debug\net8.0\Sklep.pdb
+C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\Sklep.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\Sklep.AssemblyInfoInputs.cache
+C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\Sklep.AssemblyInfo.cs
+C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\Sklep.csproj.CoreCompileInputs.cache
+C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\Sklep.dll
+C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\refint\Sklep.dll
+C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\Sklep.pdb
+C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\ref\Sklep.dll
+C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\Sklep.csproj.AssemblyReference.cache

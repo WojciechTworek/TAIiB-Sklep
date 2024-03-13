@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Taiib2.props" />
+</Project>
