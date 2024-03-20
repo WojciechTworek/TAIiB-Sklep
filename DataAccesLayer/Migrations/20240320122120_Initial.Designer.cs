@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccesLayer.Migrations
 {
     [DbContext(typeof(SklepContext))]
-    [Migration("20240313103123_Initial")]
+    [Migration("20240320122120_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -121,10 +121,15 @@ namespace DataAccesLayer.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("OrderPositionId")
+                        .HasColumnType("int");
+
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OrderPositionId");
 
                     b.ToTable("Product");
                 });
@@ -200,9 +205,25 @@ namespace DataAccesLayer.Migrations
                     b.Navigation("Order");
                 });
 
+            modelBuilder.Entity("Sklep.Product", b =>
+                {
+                    b.HasOne("Sklep.OrderPosition", "OrderPosition")
+                        .WithMany("Products")
+                        .HasForeignKey("OrderPositionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OrderPosition");
+                });
+
             modelBuilder.Entity("Sklep.Order", b =>
                 {
                     b.Navigation("OrderPositions");
+                });
+
+            modelBuilder.Entity("Sklep.OrderPosition", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("Sklep.Product", b =>

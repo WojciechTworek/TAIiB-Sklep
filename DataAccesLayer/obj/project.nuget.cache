@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iadzsw7j6vtJdtYq9iIwDsiU96X8EcljGUQHFXSaD87mnLN0vq63ohf7FuH8HpNfwWe4Q2rSDjo6f1fHqfiYLA==",
+  "dgSpecHash": "gt7PU3ET3Ls+t7VuQzD+JXChZyfw+/I3CVMsyDtXAZD3ndenuMCKaSkcwCUOnu8gBcPij3ZEqApbhMU+ONgG+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wojte\\source\\repos\\Taiib2\\DataAccesLayer\\DataAccesLayer.csproj",
+  "projectFilePath": "D:\\Taib\\TAIiB-Sklep\\DataAccesLayer\\DataAccesLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wojte\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

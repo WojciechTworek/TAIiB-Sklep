@@ -11,11 +11,14 @@ namespace Sklep
         public int Id { get; set; }
         public int UserId { get; set; }
         [ForeignKey(nameof(UserId))]
+        [Required]
         public User User {  get; set; }
 
         public DateTime Date { get; set; }
 
-        public IEnumerable<OrderPosition> OrderPositions { get; set; }
+        public required IEnumerable<OrderPosition> OrderPositions { get; set; }
+
+        
 
         public void Configure(EntityTypeBuilder<Order> builder)
         {
@@ -27,6 +30,7 @@ namespace Sklep
                 .HasMany(x => x.OrderPositions)
                 .WithOne(x => x.Order)
                 .OnDelete(DeleteBehavior.Cascade);
+
         }
     }
 }

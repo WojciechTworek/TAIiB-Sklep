@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZXN1jFSL1NUfAJFiQ6XdbkTI4TIoirHcV2BvxEEq/3EzqrhwWcB9+2s6SLBzUZXtOapM6Ut3j5Qz1Akti5TlYA==",
+  "dgSpecHash": "HyC8WKcSWUclfN7PcP9/LEuojr4WV7j6Qj0wZctdJrZIn1BZidwhcqnIQQ+wrpY9tFPGs0Kvwo1JRCCzpdEDkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wojte\\source\\repos\\Taiib2\\Sklep\\Sklep.csproj",
+  "projectFilePath": "D:\\Taib\\TAIiB-Sklep\\Sklep\\Sklep.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",

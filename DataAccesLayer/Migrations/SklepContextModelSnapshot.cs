@@ -26,7 +26,8 @@ namespace DataAccesLayer.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("ID");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -52,7 +53,8 @@ namespace DataAccesLayer.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("ID");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -73,7 +75,8 @@ namespace DataAccesLayer.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("ID");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -97,7 +100,8 @@ namespace DataAccesLayer.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("ID");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -114,10 +118,15 @@ namespace DataAccesLayer.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("OrderPositionId")
+                        .HasColumnType("int");
+
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OrderPositionId");
 
                     b.ToTable("Product");
                 });
@@ -126,7 +135,8 @@ namespace DataAccesLayer.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("ID");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -173,7 +183,7 @@ namespace DataAccesLayer.Migrations
             modelBuilder.Entity("Sklep.Order", b =>
                 {
                     b.HasOne("Sklep.User", "User")
-                        .WithMany("Order")
+                        .WithMany("Orders")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -192,9 +202,25 @@ namespace DataAccesLayer.Migrations
                     b.Navigation("Order");
                 });
 
+            modelBuilder.Entity("Sklep.Product", b =>
+                {
+                    b.HasOne("Sklep.OrderPosition", "OrderPosition")
+                        .WithMany("Products")
+                        .HasForeignKey("OrderPositionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OrderPosition");
+                });
+
             modelBuilder.Entity("Sklep.Order", b =>
                 {
                     b.Navigation("OrderPositions");
+                });
+
+            modelBuilder.Entity("Sklep.OrderPosition", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("Sklep.Product", b =>
@@ -206,7 +232,7 @@ namespace DataAccesLayer.Migrations
                 {
                     b.Navigation("BasketPositions");
 
-                    b.Navigation("Order");
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

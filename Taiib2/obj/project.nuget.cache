@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UA8vBccfcHCIGHuh7BbES5QJwDtexKxGHjxfy1/5idkQcUPfTtksIO74DRZ4FBOjtKr838wQFcY/2mUrdNGk4g==",
+  "dgSpecHash": "RSs93PTPuwsRHn79eltXD0NJ6EqE52O4J6g3Ssh8KlzlDQUPXJ2HQ56Uv2+4ZO5Q0T/xAJLqGEZRJ6mQ7i0cKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wojte\\source\\repos\\Taiib2\\Taiib2\\Taiib2.csproj",
+  "projectFilePath": "D:\\Taib\\TAIiB-Sklep\\Taiib2\\Taiib2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wojte\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

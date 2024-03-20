@@ -12,9 +12,11 @@ namespace Sklep
         public int ProductId {  get; set; }
 
         [ForeignKey(nameof(ProductId))]
+        [Required]
         public Product Product { get; set; }
         public int UserId { get; set; }
         [ForeignKey(nameof(UserId))]
+        [Required]
         public User User { get; set;}
         public int Amount { get; set; }
 
@@ -23,7 +25,7 @@ namespace Sklep
             builder
                  .HasOne(x => x.User)
                  .WithMany(x => x.BasketPositions)
-                 .OnDelete(DeleteBehavior.Cascade);
+                 .OnDelete(DeleteBehavior.NoAction);
             builder
                 .HasOne(x => x.Product)
                 .WithMany(x => x.BasketPositions)

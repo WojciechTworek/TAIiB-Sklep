@@ -16,7 +16,9 @@ namespace Sklep
         public string Image { get; set; }
         public bool IsActive { get; set; }
 
-        public IEnumerable<BasketPosition> BasketPositions { get; set;}
+        public OrderPosition OrderPosition { get; set; }
+
+        public required IEnumerable<BasketPosition> BasketPositions { get; set;}
 
         public void Configure(EntityTypeBuilder<Product> builder)
         {
@@ -24,6 +26,10 @@ namespace Sklep
                  .HasMany(x => x.BasketPositions)
                  .WithOne(x => x.Product)
                  .OnDelete(DeleteBehavior.Cascade);
+            builder
+                .HasOne(x => x.OrderPosition)
+                .WithMany(x => x.Products)
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }
