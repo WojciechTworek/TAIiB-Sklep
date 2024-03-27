@@ -10,3 +10,16 @@ C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\refint\Sklep.dll
 C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\Sklep.pdb
 C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\ref\Sklep.dll
 C:\Users\wojte\source\repos\Taiib2\Sklep\obj\Debug\net8.0\Sklep.csproj.AssemblyReference.cache
+D:\Taib\TAIiB-Sklep\Sklep\bin\Debug\net8.0\Sklep.deps.json
+D:\Taib\TAIiB-Sklep\Sklep\bin\Debug\net8.0\Sklep.dll
+D:\Taib\TAIiB-Sklep\Sklep\bin\Debug\net8.0\Sklep.pdb
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\Sklep.csproj.AssemblyReference.cache
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\Sklep.GeneratedMSBuildEditorConfig.editorconfig
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\Sklep.AssemblyInfoInputs.cache
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\Sklep.AssemblyInfo.cs
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\Sklep.csproj.CoreCompileInputs.cache
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\Sklep.sourcelink.json
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\Sklep.dll
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\refint\Sklep.dll
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\Sklep.pdb
+D:\Taib\TAIiB-Sklep\Sklep\obj\Debug\net8.0\ref\Sklep.dll

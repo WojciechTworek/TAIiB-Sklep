@@ -1,0 +1,6 @@
+D:\Taib\TAIiB-Sklep\BLL_EF\obj\Debug\net8.0\BLL_EF.csproj.AssemblyReference.cache
+D:\Taib\TAIiB-Sklep\BLL_EF\obj\Debug\net8.0\BLL_EF.GeneratedMSBuildEditorConfig.editorconfig
+D:\Taib\TAIiB-Sklep\BLL_EF\obj\Debug\net8.0\BLL_EF.AssemblyInfoInputs.cache
+D:\Taib\TAIiB-Sklep\BLL_EF\obj\Debug\net8.0\BLL_EF.AssemblyInfo.cs
+D:\Taib\TAIiB-Sklep\BLL_EF\obj\Debug\net8.0\BLL_EF.csproj.CoreCompileInputs.cache
+D:\Taib\TAIiB-Sklep\BLL_EF\obj\Debug\net8.0\BLL_EF.sourcelink.json

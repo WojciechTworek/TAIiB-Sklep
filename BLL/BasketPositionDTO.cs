@@ -11,6 +11,6 @@ namespace BLL
         public int Id { get; init; }
         public int ProductId { get; init; }
         public int UserId { get; init; }
-        public int Amount { get; init; }
+        public int Amount { get; set; }
     }
 }

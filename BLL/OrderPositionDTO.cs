@@ -10,8 +10,8 @@ namespace BLL
     {
         public int Id { get; init; }
         public int OrderId { get; init; }
-        public int Amount { get; init; }
-        public double? Price { get; init; }
-        public List<ProductDTO> Products { get; init; }
+        public int Amount { get; set; }
+        public double? Price { get; set; }
+        public List<ProductDTO> Products { get; set; }
     }
 }

@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("BLL")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("BLL_EF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec5e483437d52626cccbcbe243c3d4119a8c4a21")]
-[assembly: System.Reflection.AssemblyProductAttribute("BLL")]
-[assembly: System.Reflection.AssemblyTitleAttribute("BLL")]
+[assembly: System.Reflection.AssemblyProductAttribute("BLL_EF")]
+[assembly: System.Reflection.AssemblyTitleAttribute("BLL_EF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.

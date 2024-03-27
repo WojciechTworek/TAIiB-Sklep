@@ -9,8 +9,8 @@ namespace BLL
     public class OrderDTO
     {
         public int Id { get; init; }
-        public int UserId { get; init; }
-        public DateTime Date { get; init; }
-        public List<OrderPositionDTO> OrderPositions { get; init; }
+        public int UserId { get; set; }
+        public DateTime Date { get; set; }
+        public List<OrderPositionDTO> OrderPositions { get; set; }
     }
 }
