@@ -1,4 +1,6 @@
 ﻿using BLL;
+using DataAccesLayer;
+
 using Sklep;
 using System;
 using System.Collections.Generic;
@@ -8,55 +10,63 @@ using System.Threading.Tasks;
 
 namespace BLL_EF
 {
-    internal class OrderImpl : OrderInt
+
+    public class OrderImpl : OrderInt
     {
-        private readonly List<OrderDTO> _orders;
-        private readonly List<OrderPositionDTO> _orderPositions;
+        private readonly SklepContext _context;
 
-        public OrderImpl(List<OrderDTO> orders, List<OrderPositionDTO> orderPositions)
+        public OrderImpl(SklepContext context)
         {
-            _orders = orders;
-            _orderPositions = orderPositions;
+            _context = context;
         }
-
 
         public void CreateOrder(int userId)
         {
-            var newOrder = new OrderDTO
+            var newOrder = new Order
             {
-                Id = GenerateUniqueId(),
                 UserId = userId,
                 Date = DateTime.Now,
-                OrderPositions = _orderPositions.Where(op => op.OrderId == userId).ToList()
+                OrderPositions = new List<OrderPosition>()
+                
             };
 
-            _orders.Add(newOrder);
-        }
-
-        private int GenerateUniqueId()
-        {
-            return new Random().Next(1, 1000);
+            _context.Order.Add(newOrder);
+            _context.SaveChanges();
         }
 
         public IEnumerable<OrderDTO> GetAllOrders()
         {
-            return _orders;
+            return _context.Order.Select(o => new OrderDTO
+            {
+                Id = o.Id,
+                UserId = o.UserId,
+                Date = o.Date
+            }).ToList();
         }
 
         public IEnumerable<OrderPositionDTO> GetOrderPosition(int userId)
         {
-            var userOrders = _orders.Where(o => o.UserId == userId);
-
-            var orderIds = userOrders.Select(o => o.Id);
-
-            var orderPositions = _orderPositions.Where(op => orderIds.Contains(op.OrderId));
+            var orderPositions = _context.Order
+                .Where(o => o.UserId == userId)
+                .SelectMany(o => o.OrderPositions)
+                .Select(op => new OrderPositionDTO
+                {
+                    OrderId = op.OrderId,
+                }).ToList();
 
             return orderPositions;
         }
 
         public IEnumerable<OrderDTO> GetOrders(int userId)
         {
-            return _orders.Where(o => o.UserId == userId);
+            return _context.Order
+                .Where(o => o.UserId == userId)
+                .Select(o => new OrderDTO
+                {
+                    Id = o.Id,
+                    UserId = o.UserId,
+                    Date = o.Date
+                }).ToList();
         }
     }
 }

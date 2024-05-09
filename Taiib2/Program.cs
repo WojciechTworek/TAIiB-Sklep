@@ -1,3 +1,5 @@
+using BLL;
+using BLL_EF;
 using DataAccesLayer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<SklepContext>();
+builder.Services.AddScoped<OrderInt, OrderImpl>();
+//builder.Services.AddScoped<ProductInt, ProdImpl>();
+//builder.Services.AddScoped<BasketInt, BasketImpl>();
 
 var app = builder.Build();
 

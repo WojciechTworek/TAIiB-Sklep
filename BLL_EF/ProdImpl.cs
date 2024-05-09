@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DataAccesLayer;
 using Microsoft.EntityFrameworkCore;
 using Sklep;
 using System;
@@ -10,12 +11,14 @@ namespace BLL_EF
 {
     public class ProdImpl : ProductInt
     {
+        readonly SklepContext _sklepContext;
         private readonly List<ProductDTO> _products;
         private readonly List<OrderPositionDTO> _orderPositions;
         private readonly List<BasketPositionDTO> _basketPositions;
 
-        public ProdImpl(List<ProductDTO> products, List<OrderPositionDTO> orderPositions, List<BasketPositionDTO> basketPositions)
+        public ProdImpl(List<ProductDTO> products, List<OrderPositionDTO> orderPositions, List<BasketPositionDTO> basketPositions,SklepContext context)
         {
+            _sklepContext = context;
             _products = products ?? throw new ArgumentNullException(nameof(products));
             _orderPositions = orderPositions ?? throw new ArgumentNullException(nameof(orderPositions));
             _basketPositions = basketPositions ?? throw new ArgumentNullException(nameof(basketPositions));
@@ -37,7 +40,17 @@ namespace BLL_EF
             if (product.Price <= 0)
                 throw new ArgumentException("Cena produktu musi być większa niż 0.");
 
-            _products.Add(product);
+            var newProduct = new Product
+            {
+                Name = product.Name,
+                Price = product.Price,
+                Image = product.Image,
+                IsActive = product.IsActive,
+                BasketPositions = new List<BasketPosition>() // Inicjowanie kolekcji BasketPositions
+            };
+
+            _sklepContext.Product.Add(newProduct);
+            _sklepContext.SaveChanges();
         }
 
         public void DeleteProduct(int productId)

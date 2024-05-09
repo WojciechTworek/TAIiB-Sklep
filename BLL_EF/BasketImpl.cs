@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace BLL_EF
 {
-    internal class BasketImpl : BasketInt
+    public class BasketImpl : BasketInt
     {
-        private readonly List<BasketPositionDTO> _basketPositions;
-        private readonly List<ProductDTO> _products;
+        public readonly List<BasketPositionDTO> _basketPositions;
+        public readonly List<ProductDTO> _products;
 
         public BasketImpl(List<ProductDTO> products)
         {

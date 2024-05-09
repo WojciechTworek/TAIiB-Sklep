@@ -15,6 +15,7 @@ namespace Sklep
         public Order Order { get; set; }
         public int Amount { get; set; }
         public double? Price {  get; set; }
+        public int ProductId {  get; set; }
         public IEnumerable<Product> Products { get; set; }
         public void Configure(EntityTypeBuilder<OrderPosition> builder)
         {
