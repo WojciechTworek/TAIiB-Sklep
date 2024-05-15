@@ -1,5 +1,6 @@
 ﻿using BLL;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace Taiib2.Controllers
 {

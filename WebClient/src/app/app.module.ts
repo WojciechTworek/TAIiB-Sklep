@@ -1,26 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OrdersComponent } from './orders/orders.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { OrderComponent } from './order/order.component';
+import { AllOrdersComponent } from './all-orders/all-orders.component';
 import { BasketComponent } from './basket/basket.component';
-import { UserComponent } from './user/user.component';
-import { ProductComponent } from './product/product.component';
-import { OrderPositionComponent } from './order-position/order-position.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProductResponse } from './product-response/product-response.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrdersComponent,
+    ProductsComponent,
+    ProductDetailComponent,
+    OrderComponent,
+    AllOrdersComponent,
     BasketComponent,
-    UserComponent,
-    ProductComponent,
-    OrderPositionComponent
+    ProductResponse
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

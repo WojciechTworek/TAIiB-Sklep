@@ -147,3 +147,4 @@ D:\Taib\TAIiB-Sklep\Taiib2\obj\Release\net8.0\Taiib2.genruntimeconfig.cache
 D:\Taib\TAIiB-Sklep\Taiib2\obj\Release\net8.0\ref\Taiib2.dll
 D:\Taib\TAIiB-Sklep\Taiib2\bin\Release\net8.0\BLL_EF.dll
 D:\Taib\TAIiB-Sklep\Taiib2\bin\Release\net8.0\BLL_EF.pdb
+D:\Taib\TAIiB-Sklep\Taiib2\obj\Release\net8.0\Taiib2.MvcApplicationPartsAssemblyInfo.cs

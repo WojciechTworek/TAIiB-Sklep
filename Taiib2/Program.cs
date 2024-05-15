@@ -12,8 +12,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<SklepContext>();
 builder.Services.AddScoped<OrderInt, OrderImpl>();
-//builder.Services.AddScoped<ProductInt, ProdImpl>();
-//builder.Services.AddScoped<BasketInt, BasketImpl>();
+builder.Services.AddScoped<ProductInt, ProdImpl>();
+builder.Services.AddScoped<BasketInt, BasketImpl>();
 
 var app = builder.Build();
 

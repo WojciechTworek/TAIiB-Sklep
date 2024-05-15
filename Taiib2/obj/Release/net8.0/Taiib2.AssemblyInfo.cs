@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Taiib2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7ab2ae646585618c27b04b20086103edcea2fda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d717549f8b3a9dc5b33c409da797f1a603fae13e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Taiib2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Taiib2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
