@@ -100,7 +100,7 @@ namespace BLL_EF
                     break;
             }
 
-            return query.Skip((page - 1) * pageSize).Take(pageSize)
+            return query.Skip((page) * pageSize).Take(pageSize)
                         .Select(p => new ProductDTO
                         {
                             Id = p.Id,

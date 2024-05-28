@@ -8,6 +8,8 @@ import { AllOrdersComponent } from './all-orders/all-orders.component';
 import { BasketComponent } from './basket/basket.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductResponse } from './product-response/product-response.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { ProductResponse } from './product-response/product-response.component';
     OrderComponent,
     AllOrdersComponent,
     BasketComponent,
-    ProductResponse
+    ProductResponse,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

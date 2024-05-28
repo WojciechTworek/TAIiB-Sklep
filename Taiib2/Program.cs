@@ -15,6 +15,18 @@ builder.Services.AddScoped<OrderInt, OrderImpl>();
 builder.Services.AddScoped<ProductInt, ProdImpl>();
 builder.Services.AddScoped<BasketInt, BasketImpl>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Sklep", builder =>
+    {
+        builder
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .Build();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,7 +37,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("Sklep");
 app.UseAuthorization();
 
 app.MapControllers();

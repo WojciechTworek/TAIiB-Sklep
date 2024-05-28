@@ -16,7 +16,7 @@ namespace Taiib2.Controllers
         }
 
         [HttpGet("{page}/{pageSize}")]
-        public IActionResult GetProducts(int page, int pageSize, string nameFiltr, bool? isActiveFiltr, string sort, bool isAscending)
+        public IActionResult GetProducts(int page, int pageSize, string? nameFiltr, bool? isActiveFiltr, string? sort, bool isAscending)
         {
             var products = _productService.GetProducts(page, pageSize, nameFiltr, isActiveFiltr, sort, isAscending);
             return Ok(products);
